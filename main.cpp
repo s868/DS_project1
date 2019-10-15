@@ -32,7 +32,7 @@ int main()
     char x;
     int i=0,j;
     char type[2];
-    int ref_pt,row_to_place,col_top[16]={0};
+    int ref_pt,row_to_place,col_top[25]={0};
     int _ref_pt[2];
     int _move[4]={0},step=0; //_move: 由下往上，哪一列會被消滅 ; step: 放下這個方塊有幾列會被消滅
     int *trans; //trans[real_row]=row index
