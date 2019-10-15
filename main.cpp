@@ -71,9 +71,9 @@ int main()
     else n=_n[0];
     cout<<"m="<<m<<",n="<<n<<endl;
 
-    trans=new int[m];
-    row=new ROW[m];
-    for(i=0;i<m;i++) trans[i]=i;
+    trans=new int[m+6];
+    row=new ROW[m+6];
+    for(i=0;i<m+6;i++) trans[i]=i;
 
     //inFile>>skipws; //讀取第一個非空格字符
     while(!inFile.eof()){
