@@ -160,6 +160,10 @@ int main()
             for(j=1;j<=n;j++){
                 if(col_top[j]!=0){
                     col_top[j]--;
+                    while(row[trans[col_top[j]]].col[j]==0){
+                        if(col_top[j]==0) break;
+                        else  col_top[j]--;
+                    }
                 }
                 else{
                     cout<<"error: col_top should>0"<<endl;
